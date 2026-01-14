@@ -21,7 +21,7 @@ function getBHKValue() {
 function onClickedEstimatePrice() {
   console.log("Estimate price button clicked");
   var sqft = document.getElementById("uiSqft");
-  var bhk = getBHKValue();
+  var bhk = getBHKValue
   var bathrooms = getBathValue();
   var location = document.getElementById("uiLocations");
   var estPrice = document.getElementById("uiEstimatedPrice");
