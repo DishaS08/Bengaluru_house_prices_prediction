@@ -1,8 +1,13 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_from_directory 
 import util
 import os  # ADD THIS
 
 app = Flask(__name__)
+
+@app.route('/', defaults={'path': 'index.html'})
+@app.route('/<path:path>')
+def serve_frontend(path):
+    return send_from_directory('../client', path)
 
 @app.route('/get_location_names', methods=['GET'])
 def get_location_names():
