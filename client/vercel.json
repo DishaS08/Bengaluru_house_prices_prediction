@@ -1,5 +1,6 @@
 {
-  "functions": {
-    "app.html": { "runtime": "none" }
-  }
+  "framework": null,
+  "buildCommand": "",
+  "installCommand": "",
+  "outputDirectory": "client"
 }
